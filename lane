@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ "$1" == "init" ]; then
+	adb install /usr/share/gnirehtet/gnirehtet.apk
+	exit 0
+fi
+
+gnirehtet run &
+
+export SCRCPY_ICON_PATH=/usr/share/lane/icon.png
+scrcpy --new-display=1080x1920/350 --start-app=com.skiy.lane --window-title "Lane" --crop=1080:1800:0:0
+
+pkill gnirehtet
