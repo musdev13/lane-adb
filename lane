@@ -1,7 +1,18 @@
 #!/bin/bash
 
+update() {
+	wget https://cdn.sklane.com/static/download/apk/Lane.apk -P /tmp
+	adb install /tmp/Lane.apk
+	rm /tmp/Lane.apk
+}
+
 if [ "$1" == "init" ]; then
+	update
 	adb install /usr/share/gnirehtet/gnirehtet.apk
+	exit 0
+fi
+if [ "$1" == "update" ]; then
+	update
 	exit 0
 fi
 
