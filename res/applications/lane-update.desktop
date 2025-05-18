@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Lane (Update)
+Comment=Install latest Lane version
+Exec=lane update
+Icon=/usr/share/lane/icon.png
+Terminal=true
+Type=Application
+Categories=Utility;
+
+

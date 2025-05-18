@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Lane
+Comment=Launcher for Lane via adb and usb
+Exec=lane
+Icon=/usr/share/lane/icon.png
+Terminal=false
+Type=Application
+Categories=Utility;
+
