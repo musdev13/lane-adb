@@ -26,6 +26,6 @@ fi
 gnirehtet run &
 
 export SCRCPY_ICON_PATH=/usr/share/lane/icon.png
-scrcpy --new-display=1080x1920/350 --start-app=com.skiy.lane --window-title "Lane" --crop=1080:1800:0:0
+scrcpy --new-display=1080x1920/350 --start-app=com.skiy.lane --window-title "Lane"
 
 pkill gnirehtet
